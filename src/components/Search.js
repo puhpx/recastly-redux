@@ -1,6 +1,6 @@
 import React from 'react';
 
- 
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -12,6 +12,7 @@ class Search extends React.Component {
 
   handleInputChange(e) {
     this.props.getYouTubeVideos(e.target.value);
+    console.log('e.target.value', e.target.value);
     this.setState({
       value: e.target.value
     });
