@@ -11,14 +11,16 @@ class Search extends React.Component {
   }
 
   handleInputChange(e) {
-    this.props.getYouTubeVideos(e.target.value);
-    console.log('e.target.value', e.target.value);
+    this.props.handleSearchInputChange(e.target.value);
     this.setState({
       value: e.target.value
     });
   }
 
   render() {
+    // console.log('props--->', this.props);
+    // console.log('state--->', this.state);
+
     return (
       <div className="search-bar form-inline">
         <input
@@ -36,3 +38,4 @@ class Search extends React.Component {
 }
 
 export default Search;
+//
