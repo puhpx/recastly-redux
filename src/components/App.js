@@ -6,21 +6,9 @@ import VideoListContainer from '../containers/VideoListContainer.js';
 import VideoPlayerContainer from '../containers/VideoPlayerContainer.js';
 import SearchContainer from '../containers/SearchContainer.js';
 
-
-// import exampleVideoData from '../../src/data/exampleVideoData.js';
-
 class App extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      videos: [],
-      currentVideo: null
-    };
-  }
-
-  handleVideoListEntryTitleClick(video) {
-    this.setState({currentVideo: video});
   }
 
   render() {

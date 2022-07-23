@@ -18,9 +18,6 @@ class Search extends React.Component {
   }
 
   render() {
-    // console.log('props--->', this.props);
-    // console.log('state--->', this.state);
-
     return (
       <div className="search-bar form-inline">
         <input
